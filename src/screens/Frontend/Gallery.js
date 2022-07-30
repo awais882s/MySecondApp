@@ -3,7 +3,6 @@ import { ScrollView, View, Button, Text, StyleSheet, Image, TouchableOpacity, To
 import logo from "../../Assets/Images/logo.jpg";
 export default function Gallery() {
     return (
-
         <View style={[styles.flexContainer, { paddingVertical: 40 }]}>
             <View style={[styles.box, styles.flexCenter]}>
                 <Image style={styles.image} source={logo} />
