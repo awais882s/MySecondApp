@@ -11,9 +11,9 @@ export default function Home() {
     ]
     return (
 
-        <View style={styles.flexContainer}>
+        <View style={[styles.flexContainer , styles.flexCenter]}>
             <FlatList
-                style={styles.flexcontainer}
+                style={styles.flexContainer}
                 data={items}
                 renderItem={({ item }) => <Text style={styles.row}>{item.text}</Text>}
                 keyExtractor={(item) => item.id}
