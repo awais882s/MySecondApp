@@ -9,7 +9,6 @@ export default function Lists() {
         { id: '4', text: 'ListView' },
     ]
     return (
-
         <View style={[styles.flexContainer, { paddingHorizontal: 12 }]}>
             <FlatList
                 style={styles.flexContainer}
