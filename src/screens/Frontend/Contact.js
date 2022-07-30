@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
         backgroundColor: "white",
         flex: 1
     },
-    h1: {
+    h1:{
         fontSize: 48,
         fontWeight: "bold",
         textAlign: "center"
