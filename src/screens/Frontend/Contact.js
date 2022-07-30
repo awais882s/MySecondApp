@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     },
     h1: {
         fontSize: 48,
-        fontWeight: "bold",
+        fontWeight: "bold", 
         textAlign: "center"
     }
 })
