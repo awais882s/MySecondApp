@@ -1,5 +1,5 @@
 import React from 'react'
-import { ScrollView, View, Button, Text, StyleSheet, Image, TouchableOpacity, TouchableHighlight } from 'react-native'
+import { View, Button, Text, StyleSheet, Image, TouchableOpacity, TouchableHighlight } from 'react-native'
 import logo from "../../Assets/Images/logo.jpg";
 export default function Gallery() {
     return (
