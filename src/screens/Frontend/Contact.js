@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
-export default function Contact(){
+export default function Contact() {
     return (
         <View style={styles.flexContainer}>
             <Text style={styles.h1}>Contact Us</Text>
@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     },
     h1: {
         fontSize: 48,
-        fontWeight: "bold", 
+        fontWeight: "bold",
         textAlign: "center"
     }
 })
