@@ -5,7 +5,7 @@ export default function Contact() {
         <View style={styles.flexContainer}>
             <Text style={styles.h1}>Contact Us</Text>
         </View>
-    )  
+    )
 }
 const styles = StyleSheet.create({
     flexContainer: {
