@@ -1,7 +1,6 @@
 import React from 'react'
 import { View, Text, StyleSheet, FlatList } from 'react-native'
 export default function Lists() {
-
     const items = [
         { id: '0', text: 'Working' },
         { id: '1', text: 'Text' },
