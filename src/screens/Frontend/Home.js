@@ -1,7 +1,6 @@
 import React from 'react'
 import { View, Text, StyleSheet, FlatList } from 'react-native'
 export default function Home() {
-
     const items = [
         { id: '0', text: 'View' },
         { id: '1', text: 'Text' },
