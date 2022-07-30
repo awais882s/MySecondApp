@@ -1,11 +1,11 @@
 import { View, Text } from 'react-native'
 import React from 'react'
-import Home from './Home'
+import Lists from './Lists'
 
 export default function Frontend() {
     return (
         <>
-            <Home />
+            <Lists />
         </>
     )
 }
