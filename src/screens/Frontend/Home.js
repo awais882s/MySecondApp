@@ -11,7 +11,7 @@ export default function Home() {
     ]
     return (
 
-        <View style={[styles.flexContainer , styles.flexCenter]}>
+        <View style={[styles.flexContainer, styles.flexCenter, { backgroundColor: "pink" }]}>
             <FlatList
                 style={styles.flexContainer}
                 data={items}
