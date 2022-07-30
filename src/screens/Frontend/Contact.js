@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
         // justifyContent: "center",
         // alignItems: "center",
         backgroundColor: "white",
-        flex: 1
+        flex: 1 
     },
     h1: {
         fontSize: 48,
