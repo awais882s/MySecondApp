@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, Text, StyleSheet, Button } from 'react-native'
-export default function Home() {
+export default function Home({ navigation }) {
 
     return (
         <View style={[styles.flexContainer, { paddingHorizontal: 12 }]}>
@@ -8,7 +8,7 @@ export default function Home() {
                 <Text style={styles.h1}>Home</Text>
             </View>
             <View style={styles.button}>
-                <Button title='Go To About' onPress={() => { (alert("Working")) }} />
+                <Button title='Go To About' onPress={() => { navigation.navigate("About") }} />
             </View>
         </View>
     )
