@@ -9,14 +9,15 @@ export default function Contact() {
 }
 const styles = StyleSheet.create({
     flexContainer: {
-        // justifyContent: "center",
-        // alignItems: "center",
+        justifyContent: "center",
+        alignItems: "center",
         backgroundColor: "white",
         flex: 1
     },
     h1: {
         fontSize: 48,
         fontWeight: "bold",
-        textAlign: "center"
+        textAlign: "center",
+        color: "black"
     }
 })
