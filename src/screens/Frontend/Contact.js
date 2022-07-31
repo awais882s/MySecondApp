@@ -1,9 +1,10 @@
 import React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
-export default function Contact() {
+import { View, Text, StyleSheet, Button } from 'react-native'
+export default function Contact({ navigation }) {
     return (
         <View style={styles.flexContainer}>
             <Text style={styles.h1}>Contact Us</Text>
+            <Button title="Go to About" onPress={() => { navigation.navigate("About") }} />
         </View>
     )
 }
