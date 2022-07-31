@@ -6,6 +6,11 @@ export default function About({ navigation, route }) {
     return (
         <View style={styles.flexContainer}>
             <Text style={styles.h1}>About Us</Text>
+            <Text style={styles.h3}>Name:{name}</Text>
+            <Text style={styles.h3}>Age:{age}</Text>
+            <Text style={styles.h3}>Id:{id}</Text>
+
+
             <Button title='Go To Conatct' onPress={() => { navigation.navigate("Contact") }} />
         </View>
     )
@@ -22,5 +27,9 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         textAlign: "center",
         color: "black"
+    },
+    h3: {
+        fontSize: 20,
+        fontWeight: "bold",
     }
 })
