@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from 'react-native';
+import { Button, Image } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from "../screens/Frontend/Home"
@@ -8,6 +8,9 @@ import Contact from "../screens/Frontend/Contact"
 import Footer from '../components/Footer';
 import Header from "../components/Header"
 const Stack = createNativeStackNavigator();
+const LogoImage = () => {
+    return <Image source={require("../Assets/Images/logo.jpg")} style={{ width: 205, height: 25 }} />
+}
 
 export default function AppNavigators() {
     return (
@@ -27,12 +30,14 @@ export default function AppNavigators() {
                     headerTitleAlign: "center"
                 }} component={Home} />
                 <Stack.Screen name="About" component={About}
+
                     options={{
+                        headerTitle: () => <LogoImage />,
                         headerRight: () => (
                             <Button
                                 onPress={() => alert('This is a button!')}
                                 title="Info"
-                                // color="pink"
+                            // color="pink"
                             />
                         )
                     }}
