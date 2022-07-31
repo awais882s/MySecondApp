@@ -8,7 +8,7 @@ export default function Home() {
                 <Text style={styles.h1}>Home</Text>
             </View>
             <View style={styles.button}>
-                <Button title='Go To About ' onPress={() => { (alert("Working")) }} />
+                <Button title='Go To About' onPress={() => { (alert("Working")) }} />
             </View>
         </View>
     )
