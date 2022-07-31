@@ -1,11 +1,14 @@
 import React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, Button } from 'react-native'
 export default function Home() {
 
     return (
         <View style={[styles.flexContainer, { paddingHorizontal: 12 }]}>
             <View style={[styles.box, styles.flexCenter]}>
                 <Text style={styles.h1}>Home</Text>
+            </View>
+            <View style={styles.button}>
+                <Button title='Go To About ' />
             </View>
         </View>
     )
@@ -43,4 +46,7 @@ const styles = StyleSheet.create({
         marginBottom: 5,
         backgroundColor: 'skyblue',
     },
+    button: {
+        marginTop: 12,
+    }
 })
