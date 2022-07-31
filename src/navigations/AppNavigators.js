@@ -11,7 +11,9 @@ const Stack = createNativeStackNavigator();
 export default function AppNavigators() {
     return (
         <NavigationContainer>
-            <Stack.Navigator>
+            <Stack.Navigator
+                screenOptions={{ headerTitleAlign: "center" }}
+            >
                 <Stack.Screen name="Home" options={{
                     headerTitle: "My Home"
                     ,
