@@ -12,7 +12,11 @@ export default function AppNavigators() {
     return (
         <NavigationContainer>
             <Stack.Navigator>
-                <Stack.Screen name="Home" component={Home} />
+                <Stack.Screen name="Home" options={{
+                    headerTitle: "My Home"
+                    ,
+                    headerTitleAlign: "center"
+                }} component={Home} />
                 <Stack.Screen name="About" component={About} />
                 <Stack.Screen name="Contact" component={Contact} />
             </Stack.Navigator>
