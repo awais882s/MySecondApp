@@ -86,4 +86,11 @@ const styles = StyleSheet.create({
         marginBottom: 5,
         backgroundColor: 'skyblue',
     },
+    header: {
+        padding: 15,
+        marginBottom: 5,
+        backgroundColor: 'steelblue',
+        color: 'white',
+        fontWeight: 'bold',
+    },
 })
