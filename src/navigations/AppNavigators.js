@@ -14,8 +14,8 @@ export default function AppNavigators() {
             <Stack.Navigator
                 screenOptions={{
                     headerTitleAlign: "center",
-                    headerTintColor: "red",
-                    headerTitleStyle: { fontWeight: "bold" }
+                    // headerTintColor: "red",
+                    headerTitleStyle: { fontWeight: "bold", color: "red" }
                 }}
             >
                 <Stack.Screen name="Home" options={{
