@@ -5,10 +5,10 @@ export default function Home({ navigation }) {
     return (
         <View style={[styles.flexContainer, { paddingHorizontal: 12 }]}>
             <View style={[styles.box, styles.flexCenter]}>
-                <Text style={styles.h1}>Home</Text>
+                <Text style={styles.h1} >Home</Text>
             </View>
             <View style={styles.button}>
-                <Button title='Go To About' onPress={() => { navigation.navigate("About") }} />
+                <Button title='Go To About'  onPress={() => { navigation.navigate("About") }} />
             </View>
         </View>
     )
