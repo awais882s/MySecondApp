@@ -1,6 +1,8 @@
 import React from 'react'
 import { View, Text, StyleSheet, Button } from 'react-native'
-export default function About({ navigation }) {
+export default function About({ navigation, route }) {
+    const { name, id, age } = route.params
+    console.log(name, id, age)
     return (
         <View style={styles.flexContainer}>
             <Text style={styles.h1}>About Us</Text>

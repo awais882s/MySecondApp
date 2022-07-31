@@ -8,7 +8,7 @@ export default function Home({ navigation }) {
                 <Text style={styles.h1} >Home</Text>
             </View>
             <View style={styles.button}>
-                <Button title='Go To About'  onPress={() => { navigation.navigate("About") }} />
+                <Button title='Go To About' onPress={() => { navigation.navigate("About", { name: "AWAIS S", id: "123", age: 21 }) }} />
             </View>
         </View>
     )
