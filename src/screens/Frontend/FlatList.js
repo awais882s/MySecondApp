@@ -1,20 +1,32 @@
 import React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
-export default function Home() {
-
+import { View, Text, StyleSheet, FlatList } from 'react-native'
+export default function Flat() {
+    const items = [
+        { id: '0', text: 'View' },
+        { id: '1', text: 'Text' },
+        { id: '2', text: 'Image' },
+        { id: '3', text: 'ScrollView' },
+        { id: '4', text: 'ListView' },
+    ]
     return (
         <View style={[styles.flexContainer, { paddingHorizontal: 12 }]}>
-            <View style={[styles.box, styles.flexCenter]}>
+            <FlatList
+                style={styles.flexContainer}
+                data={items}
+                renderItem={({ item }) => <Text style={styles.row}>{item.text}</Text>}
+                keyExtractor={(item) => item.id}
+            />
+            {/* <View style={[styles.box, styles.flexCenter]}>
                 <Text style={styles.h1}>Home</Text>
-            </View>
+            </View> */}
         </View>
     )
 }
 const styles = StyleSheet.create({
     flexContainer: {
-        justifyContent: "center",
-        alignItems: "center",
-        backgroundColor: "white",
+        // justifyContent: "center",
+        // alignItems: "center",
+        // backgroundColor: "white",
         flex: 1
     },
     flexCenter: {
