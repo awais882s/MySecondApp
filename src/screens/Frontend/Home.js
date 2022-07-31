@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     box: {
         width: 250,
         height: 250,
-        backgroundColor: "#00bbf9",
+        backgroundColor: "#b2bec3",
         borderRadius: 10,
         borderWidth: 5,
         borderBottomColor: "#a0e426",
