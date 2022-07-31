@@ -5,6 +5,9 @@ export default function Contact({ navigation }) {
         <View style={styles.flexContainer}>
             <Text style={styles.h1}>Contact Us</Text>
             <Button title="Go to About" onPress={() => { navigation.navigate("About") }} />
+            <View style={{ marginTop: 20 }}>
+                <Button title="Go to Back" onPress={() => { navigation.goBack() }} />
+            </View>
         </View>
     )
 }
