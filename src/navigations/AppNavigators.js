@@ -5,17 +5,19 @@ import Home from "../screens/Frontend/Home"
 import About from "../screens/Frontend/About"
 import Contact from "../screens/Frontend/Contact"
 import Footer from '../components/Footer';
-
+import Header from "../components/Header"
 const Stack = createNativeStackNavigator();
 
 export default function AppNavigators() {
     return (
         <NavigationContainer>
+            <Header />
             <Stack.Navigator
                 screenOptions={{
                     headerTitleAlign: "center",
                     // headerTintColor: "red",
-                    headerTitleStyle: { fontWeight: "bold", color: "red" }
+                    headerTitleStyle: { fontWeight: "bold", color: "red" },
+                    headerShown: false
                 }}
             >
                 <Stack.Screen name="Home" options={{
