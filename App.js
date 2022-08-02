@@ -9,6 +9,6 @@ export default function App() {
       <StatusBar backgroundColor="#7d5fff" barStyle="dark-content" />
       <AppNavigators />
       {/* <Frontend /> */}
-    </>
+    </> 
   )
 }
