@@ -34,7 +34,6 @@ const MyTabs = () => {
                 }}
             />
 
-
         </Tab.Navigator>
     );
 }
