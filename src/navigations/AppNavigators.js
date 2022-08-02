@@ -6,17 +6,34 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from "../screens/Frontend/Home"
 import About from "../screens/Frontend/About"
 import Contact from "../screens/Frontend/Contact"
-// import Footer from '../components/Footer';
-// import Header from "../components/Header"
+import Footer from '../components/Footer';
+import Header from "../components/Header"
+import Icon from 'react-native-vector-icons/FontAwesome5';
+
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 const MyTabs = () => {
     return (
         <Tab.Navigator>
 
-            <Tab.Screen name="Home" component={Home} />
+            <Tab.Screen name="Home" component={Home}
+                options={{
+                    tabBarShowLabel: false,
+                    tabBarIcon: ({ color, size }) => (
+                        <Icon name="home" color={color} size={size} />
+                    ),
+                }}
+            />
             <Tab.Screen name='About' component={About} initialParams={{ name: "Awais S", age: "20", id: "882" }} />
-            <Tab.Screen name="Contact" component={Contact} />
+            <Tab.Screen name="Contact" component={Contact}
+                options={{
+                    tabBarShowLabel: false,
+                    tabBarIcon: ({ color, size }) => (
+                        <Icon name="bell" color={color} size={size} />
+                    ),
+                    tabBarBadge: 3,
+                }}
+            />
 
 
         </Tab.Navigator>
