@@ -1,11 +1,12 @@
 import React from 'react'
 import { View, Text, StyleSheet, Button } from 'react-native'
+import Icon from 'react-native-vector-icons/FontAwesome5';
 export default function Home({ navigation }) {
 
     return (
         <View style={[styles.flexContainer, { paddingHorizontal: 12 }]}>
             <View style={[styles.box, styles.flexCenter]}>
-                <Text style={styles.h1} >Home</Text>
+                <Text style={styles.h1} >Home <Icon name="home" /></Text>
             </View>
             <View style={styles.button}>
                 <Button title='Go To About' onPress={() => { navigation.navigate("About", { name: "AWAIS S", id: "123", age: 21 }) }} />
