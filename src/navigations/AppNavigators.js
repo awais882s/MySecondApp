@@ -9,7 +9,6 @@ import Contact from "../screens/Frontend/Contact"
 import Footer from '../components/Footer';
 import Header from "../components/Header"
 import Icon from 'react-native-vector-icons/FontAwesome5';
-
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 const MyTabs = () => {
