@@ -20,7 +20,6 @@ export default function Home({ navigation }) {
             ]
         );
     }
-
     return (
         <View style={[styles.flexContainer, { paddingHorizontal: 12 }]}>
             <View style={[styles.box, styles.flexCenter]}>
