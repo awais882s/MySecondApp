@@ -38,7 +38,6 @@ const MyTabs = () => {
 const LogoImage = () => {
     return <Image source={require("../Assets/Images/logo.jpg")} style={{ width: 205, height: 25 }} />
 }
-
 export default function AppNavigators() {
     return (
         <NavigationContainer>
