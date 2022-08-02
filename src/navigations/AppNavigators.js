@@ -15,7 +15,7 @@ const MyTabs = () => {
         <Tab.Navigator>
 
             <Tab.Screen name="Home" component={Home} />
-            <Tab.Screen name='About' component={About} />
+            <Tab.Screen name='About' component={About} initialParams={{ name: "Awais S", age: "20", id: "882" }} />
             <Tab.Screen name="Contact" component={Contact} />
 
 
