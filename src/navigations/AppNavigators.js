@@ -33,7 +33,6 @@ const MyTabs = () => {
                     tabBarBadge: 3,
                 }}
             />
-
         </Tab.Navigator>
     );
 }
