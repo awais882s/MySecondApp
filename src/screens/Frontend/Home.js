@@ -12,7 +12,7 @@ export default function Home({ navigation }) {
                 <Button title='Go To About' onPress={() => { navigation.navigate("About", { name: "AWAIS S", id: "123", age: 21 }) }} />
             </View>
             <View style={styles.flexCenter}>
-                <TouchableOpacity style={styles.buttons}>
+                <TouchableOpacity style={styles.buttons} onPress={() => { (alert("My Todo")) }}>
                     <Text style={{ color: "white", textAlign: "center" }}>Add Todo <Icon name='plus' /> </Text>
                 </TouchableOpacity>
             </View>
