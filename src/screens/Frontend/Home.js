@@ -1,15 +1,20 @@
 import React from 'react'
-import { View, Text, StyleSheet, Button } from 'react-native'
+import { View, Text, StyleSheet, Button, TouchableOpacity } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome5';
 export default function Home({ navigation }) {
 
     return (
         <View style={[styles.flexContainer, { paddingHorizontal: 12 }]}>
             <View style={[styles.box, styles.flexCenter]}>
-                <Text style={styles.h1} >Home <Icon name="home" /></Text>
+                <Text style={styles.h1} >Home <Icon name="home" size={32} /></Text>
             </View>
             <View style={styles.button}>
                 <Button title='Go To About' onPress={() => { navigation.navigate("About", { name: "AWAIS S", id: "123", age: 21 }) }} />
+            </View>
+            <View style={styles.flexCenter}>
+                <TouchableOpacity style={styles.buttons}>
+                    <Text style={{ color: "white", textAlign: "center" }}>Add Todo </Text>
+                </TouchableOpacity>
             </View>
         </View>
     )
@@ -49,5 +54,15 @@ const styles = StyleSheet.create({
     },
     button: {
         marginTop: 12,
+    },
+    buttons: {
+        paddingHorizontal: 8,
+        paddingVertical: 12,
+        backgroundColor: "red",
+        width: 300,
+        borderRadius: 8,
+        marginTop: 7,
+
+
     }
 })
