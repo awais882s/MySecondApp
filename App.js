@@ -6,7 +6,7 @@ import AppNavigators from './src/navigations/AppNavigators';
 export default function App() {
   return (
     <>
-      <StatusBar backgroundColor="#7d5fff" barStyle="dark-content" />
+      <StatusBar backgroundColor="pink" barStyle="dark-content" />
       <AppNavigators />
       {/* <Frontend /> */}
     </>
