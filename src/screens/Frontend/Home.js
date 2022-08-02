@@ -1,7 +1,25 @@
 import React from 'react'
-import { View, Text, StyleSheet, Button, TouchableOpacity } from 'react-native'
+import { View, Text, StyleSheet, Button, TouchableOpacity, Alert } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome5';
 export default function Home({ navigation }) {
+    const handlePress = () => {
+        Alert.alert(
+            "Login Successful",
+            "Here is Your Todo",
+            [
+                {
+                    text: "Ask me later",
+                    onPress: () => console.log("Ask me later pressed")
+                },
+                {
+                    text: "Cancel",
+                    onPress: () => console.log("Cancel Pressed"),
+                    style: "cancel"
+                },
+                { text: "OK", onPress: () => console.log("OK Pressed") }
+            ]
+        );
+    }
 
     return (
         <View style={[styles.flexContainer, { paddingHorizontal: 12 }]}>
@@ -12,7 +30,7 @@ export default function Home({ navigation }) {
                 <Button title='Go To About' onPress={() => { navigation.navigate("About", { name: "AWAIS S", id: "123", age: 21 }) }} />
             </View>
             <View style={styles.flexCenter}>
-                <TouchableOpacity style={styles.buttons} onPress={() => { (alert("My Todo")) }}>
+                <TouchableOpacity style={styles.buttons} onPress={handlePress}>
                     <Text style={{ color: "white", textAlign: "center" }}>Add Todo <Icon name='plus' /> </Text>
                 </TouchableOpacity>
             </View>
