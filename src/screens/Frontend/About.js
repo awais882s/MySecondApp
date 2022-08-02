@@ -9,7 +9,6 @@ export default function About({ navigation, route }) {
             <Text style={styles.h3}>Name:{name}</Text>
             <Text style={styles.h3}>Age:{age}</Text>
             <Text style={styles.h3}>Id:{id}</Text>
-
             <Button title='Go To Conatct' onPress={() => { navigation.navigate("Contact") }} />
         </View>
     )
