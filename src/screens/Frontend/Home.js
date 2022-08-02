@@ -13,7 +13,7 @@ export default function Home({ navigation }) {
             </View>
             <View style={styles.flexCenter}>
                 <TouchableOpacity style={styles.buttons}>
-                    <Text style={{ color: "white", textAlign: "center" }}>Add Todo </Text>
+                    <Text style={{ color: "white", textAlign: "center" }}>Add Todo <Icon name='plus' /> </Text>
                 </TouchableOpacity>
             </View>
         </View>
