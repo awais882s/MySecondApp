@@ -1,7 +1,6 @@
 import React from 'react'
 import { View, Text, StyleSheet, FlatList, SectionList } from 'react-native'
 export default function Lists() {
-
     // for sections list
     const items = [
         {
