@@ -30,6 +30,7 @@ export default function AppNavigators() {
                     headerTitleAlign: "center"
                 }} component={Home} />
                 <Stack.Screen name="About" component={About}
+                    initialParams={{ name: "Awais S", age: "30", id: "882" }}
 
                     options={{
                         headerTitle: () => <LogoImage />,
