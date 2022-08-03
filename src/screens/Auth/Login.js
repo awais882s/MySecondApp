@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import { View, Text, StyleSheet, TextInput, Button } from 'react-native'
+import { useAuthContext } from '../../contexts/AuthContexts'
 const intialState = { email: "", password: "" }
 
 export default function Login() {
+    const { dispatch } = useAuthContext
     const [state, setState] = useState(intialState)
     const handleChange = (name, val) => {
         setState(s => ({ ...s, [name]: val }))
@@ -12,6 +14,7 @@ export default function Login() {
 
         console.log(email);
         console.log(password);
+        dispatch({ type: "LOGIN" })
     }
     return (
         <View style={styles.flexCenter}>
