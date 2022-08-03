@@ -10,6 +10,7 @@ import Footer from '../components/Footer';
 import Header from "../components/Header"
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import Login from '../screens/Auth/Login';
+import { useAuthContext } from '../contexts/AuthContexts';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 const MyTabs = () => {
@@ -50,7 +51,7 @@ const LogoImage = () => {
     return <Image source={require("../Assets/Images/logo.jpg")} style={{ width: 205, height: 25 }} />
 }
 export default function AppNavigators() {
-    const isAuthen = false;
+    const { isAuthenticated } = useAuthContext()
     return (
         <NavigationContainer>
             {/* <MyTabs /> */}
@@ -65,7 +66,7 @@ export default function AppNavigators() {
                 initialRouteName="Login"
             >
                 {
-                    isAuthen ?
+                    isAuthenticated ?
 
 
 
