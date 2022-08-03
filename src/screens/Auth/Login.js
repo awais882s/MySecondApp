@@ -16,6 +16,12 @@ export default function Login() {
                 placeholderTextColor="white"
                 keyboardType="email-address"
             />
+            <TextInput
+                style={styles.formControl}
+                placeholder="Enter Your password"
+                placeholderTextColor="white"
+                secureTextEntry
+            />
 
         </View>
     )
