@@ -2,7 +2,6 @@ import React, { useReducer, createContext, useContext } from 'react'
 const AuthContext = createContext()
 const intialState = { isAuthenticated: false }
 const reducer = (state, { type }) => {
-
     switch (type) {
         case "LOGIN":
             return Object.assign({}, { isAuthenticated: true })
@@ -11,9 +10,7 @@ const reducer = (state, { type }) => {
         default:
             return state
     }
-
 }
-
 export default function AuthContextsProvider(props) {
     const [state, dispatch] = useReducer(reducer, intialState)
     return (
