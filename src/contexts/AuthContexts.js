@@ -8,6 +8,8 @@ const reducer = (state, { type }) => {
             return Object.assign({}, { isAuthenticated: true })
         case "LOGOUT":
             return Object.assign({}, { isAuthenticated: false })
+        default:
+            return state
     }
 
 }
