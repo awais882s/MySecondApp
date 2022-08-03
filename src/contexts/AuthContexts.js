@@ -19,7 +19,6 @@ export default function AuthContextsProvider(props) {
         </AuthContext.Provider>
     )
 }
-
 export const useAuthContext = () => {
     return useContext(AuthContext)
 }

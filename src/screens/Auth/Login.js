@@ -11,7 +11,6 @@ export default function Login() {
     }
     const handleLogin = () => {
         const { email, password } = state;
-
         console.log(email);
         console.log(password);
         dispatch({ type: "LOGIN" })
