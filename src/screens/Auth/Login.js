@@ -5,7 +5,7 @@ const intialState = { email: "", password: "" }
 export default function Login() {
     const [state, setState] = useState(intialState)
     const handleChange = (name, val) => {
-        setState(s => ({ ...s, [e.target.name]: e.target.value }))
+        setState(s => ({ ...s, [name]: val }))
     }
     const handleLogin = () => {
         const { email, password } = state;
