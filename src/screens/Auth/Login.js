@@ -4,7 +4,7 @@ import { useAuthContext } from '../../contexts/AuthContexts'
 const intialState = { email: "", password: "" }
 
 export default function Login() {
-    const { dispatch } = useAuthContext
+    const { dispatch } = useAuthContext()
     const [state, setState] = useState(intialState)
     const handleChange = (name, val) => {
         setState(s => ({ ...s, [name]: val }))
