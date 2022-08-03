@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { View, Text, StyleSheet, TextInput } from 'react-native'
+import { View, Text, StyleSheet, TextInput, Button } from 'react-native'
 const intialState = { email: "", password: "" }
 
 export default function Login() {
@@ -22,7 +22,9 @@ export default function Login() {
                 placeholderTextColor="white"
                 secureTextEntry
             />
-
+            <View style={{ width: "100%" }}>
+                <Button title="Login" color="red" />
+            </View>
         </View>
     )
 }
