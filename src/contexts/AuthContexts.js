@@ -15,6 +15,7 @@ const reducer = (state, { type }) => {
 }
 
 export default function AuthContextsProvider(props) {
+    const [state, dispatch] = useReducer(reducer, intialState)
     return (
         <AuthContext.Provider>
             {props.children}
