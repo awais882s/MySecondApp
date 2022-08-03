@@ -64,26 +64,31 @@ export default function AppNavigators() {
                 }}
                 initialRouteName="Login"
             >
-                <Stack.Screen name="Home" options={{
-                    headerTitle: "My Home"
-                    ,
-                    headerTitleAlign: "center"
-                }} component={Home} />
-                <Stack.Screen name="About" component={About}
-                    initialParams={{ name: "Awais S", age: "30", id: "882" }}
+                <Stack.Group>
 
-                    options={{
-                        headerTitle: () => <LogoImage />,
-                        headerRight: () => (
-                            <Button
-                                onPress={() => alert('This is a button!')}
-                                title="Info"
-                            // color="pink"
-                            />
-                        )
-                    }}
-                />
-                <Stack.Screen name="Login" component={Login} />
+                    <Stack.Screen name="Home" options={{
+                        headerTitle: "My Home"
+                        ,
+                        headerTitleAlign: "center"
+                    }} component={Home} />
+                    <Stack.Screen name="About" component={About}
+                        initialParams={{ name: "Awais S", age: "30", id: "882" }}
+
+                        options={{
+                            headerTitle: () => <LogoImage />,
+                            headerRight: () => (
+                                <Button
+                                    onPress={() => alert('This is a button!')}
+                                    title="Info"
+                                // color="pink"
+                                />
+                            )
+                        }}
+                    />
+                </Stack.Group>
+                <Stack.Group>
+                    <Stack.Screen name="Login" component={Login} />
+                </Stack.Group>
             </Stack.Navigator>
             {/* <Footer /> */}
         </NavigationContainer>
