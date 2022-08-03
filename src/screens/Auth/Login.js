@@ -7,6 +7,11 @@ export default function Login() {
     const handleChange = () => {
         setState(s => ({ ...s, [e.target.name]: e.target.value }))
     }
+    const handleLogin = () => {
+        const { email, password } = state;
+        console.log(email);
+        console.log(password);
+    }
     return (
         <View style={styles.flexCenter}>
             <Text style={styles.h1}>Login</Text>
@@ -23,7 +28,7 @@ export default function Login() {
                 secureTextEntry
             />
             <View style={{ width: "100%" }}>
-                <Button title="Login" color="red" />
+                <Button title="Login" color="#ef476f" onPress={handleLogin} />
             </View>
         </View>
     )
