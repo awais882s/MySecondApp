@@ -68,11 +68,7 @@ export default function AppNavigators() {
             >
                 {
                     isAuthenticated ?
-
-
-
                         <Stack.Group>
-
                             <Stack.Screen name="Home" options={{
                                 headerTitle: "My Home"
                                 ,
