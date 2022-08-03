@@ -9,6 +9,7 @@ import Contact from "../screens/Frontend/Contact"
 import Footer from '../components/Footer';
 import Header from "../components/Header"
 import Icon from 'react-native-vector-icons/FontAwesome5';
+import Login from '../screens/Auth/Login';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 const MyTabs = () => {
@@ -49,17 +50,19 @@ const LogoImage = () => {
     return <Image source={require("../Assets/Images/logo.jpg")} style={{ width: 205, height: 25 }} />
 }
 export default function AppNavigators() {
+    const isAuthen = false;
     return (
         <NavigationContainer>
-            <MyTabs />
+            {/* <MyTabs /> */}
             {/* <Header /> */}
-            {/* <Stack.Navigator
+            <Stack.Navigator
                 screenOptions={{
                     headerTitleAlign: "center",
                     // headerTintColor: "red",
                     headerTitleStyle: { fontWeight: "bold", color: "red" },
                     // headerShown: false
                 }}
+                initialRouteName="Login"
             >
                 <Stack.Screen name="Home" options={{
                     headerTitle: "My Home"
@@ -80,9 +83,9 @@ export default function AppNavigators() {
                         )
                     }}
                 />
-                <Stack.Screen name="Contact" component={Contact} />
+                <Stack.Screen name="Login" component={Login} />
             </Stack.Navigator>
-            <Footer /> */}
+            {/* <Footer /> */}
         </NavigationContainer>
     )
 }
