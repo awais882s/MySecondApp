@@ -24,6 +24,7 @@ const MyTabs = () => {
             />
             <Tab.Screen name='About' component={About} initialParams={{ name: "Awais S", age: "20", id: "882" }}
                 options={{
+                    tabBarShowLabel: "false",
                     tabBarLabel: "Groups",
                     tabBarIcon: ({ color, size }) => (
                         <Icon name="users" color={color} size={size} />
