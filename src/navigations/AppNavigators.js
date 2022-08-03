@@ -52,6 +52,7 @@ const LogoImage = () => {
 }
 export default function AppNavigators() {
     const { isAuthenticated } = useAuthContext()
+    console.log(isAuthenticated);
     return (
         <NavigationContainer>
             {/* <MyTabs /> */}
