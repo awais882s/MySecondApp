@@ -12,6 +12,8 @@ export default function Login() {
             <Text style={styles.h1}>Login</Text>
             <TextInput
                 style={styles.formControl}
+                placeholder="Enter Your Email"
+                placeholderTextColor="white"
             />
 
         </View>
@@ -22,18 +24,19 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "#f8ad9d",
+        backgroundColor: "#14213d",
         paddingHorizontal: 10
     },
     h1: {
-        fontSize: 48,
-        color: "black"
+        fontSize: 40,
+        color: "white",
+        marginBottom: 24,
     },
     formControl: {
         borderWidth: 1,
         borderRadius: 4,
         marginBottom: 10,
-        borderColor: "red",
+        borderColor: "grey",
         width: "100%"
     }
 })
