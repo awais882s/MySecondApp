@@ -16,6 +16,6 @@ const styles = StyleSheet.create({
     },
     h1: {
         fontSize: 48,
-        color: "white"
+        color: "black"
     }
 })
