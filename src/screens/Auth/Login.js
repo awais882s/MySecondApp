@@ -20,6 +20,7 @@ export default function Login() {
                 placeholder="Enter Your email"
                 placeholderTextColor="white"
                 keyboardType="email-address"
+                onChangeText={val => console.log(val)}
             />
             <TextInput
                 style={styles.formControl}
