@@ -4,11 +4,12 @@ const intialState = { email: "", password: "" }
 
 export default function Login() {
     const [state, setState] = useState(intialState)
-    const handleChange = () => {
+    const handleChange = (name, val) => {
         setState(s => ({ ...s, [e.target.name]: e.target.value }))
     }
     const handleLogin = () => {
         const { email, password } = state;
+
         console.log(email);
         console.log(password);
     }
@@ -20,13 +21,14 @@ export default function Login() {
                 placeholder="Enter Your email"
                 placeholderTextColor="white"
                 keyboardType="email-address"
-                onChangeText={val => console.log(val)}
+                onChangeText={val => (handleChange("email", val))}
             />
             <TextInput
                 style={styles.formControl}
                 placeholder="Enter Your password"
                 placeholderTextColor="white"
                 secureTextEntry
+                onChangeText={val => (handleChange("password", val))}
             />
             <View style={{ width: "100%" }}>
                 <Button title="Login" color="#ef476f" onPress={handleLogin} />
